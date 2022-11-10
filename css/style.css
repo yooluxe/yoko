@@ -1,0 +1,489 @@
+/*   reset.css  */
+
+html{box-sizing:border-box;line-height:1.15;-webkit-text-size-adjust:100%;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"}*,::after,::before{box-sizing:inherit}blockquote,body,dd,dl,dt,fieldset,figure,h1,h2,h3,h4,h5,h6,hr,html,iframe,legend,li,ol,p,pre,textarea,ul{font-size:100%;font-weight:400;margin:0;padding:0;vertical-align:baseline;border:0;outline:0}ul{list-style:none}button,input,select,textarea{margin:0}audio,embed,iframe,img,object,video{height:auto;max-width:100%;border:0;vertical-align:middle}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}a{text-decoration:none;color:#1e87f0;cursor:pointer;border:none;background:transparent}a:active,a:focus,a:hover{outline-width:0;color:#000;color:#0f6ecd}
+
+/* 	main  */
+
+    body, html { height: 100% }
+
+    html { font-size: calc(10px + .390625vw) }
+
+    body
+{
+    font: 1rem 'Segoe UI','Helvetica Neue';
+    font-weight: 400;
+    line-height: 1.5;
+
+    color: #272727;
+    background: #f8f8f8
+}
+
+	.home-template
+{
+    display: flex;
+    flex-direction: row;
+
+    min-height: 100vh;
+
+    background: url(../img/bg.webp) no-repeat 50% 50% fixed;
+    background-size: cover;
+
+    flex-wrap: nowrap
+}
+
+	.content
+{
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+
+    width: 66%;
+    height: 100%;
+    min-height: 100vh;
+
+    border-right: 8px solid #f4f5f3;
+
+    flex-wrap: nowrap
+}
+
+    .about
+{
+    position: fixed;
+    bottom: 3.75rem;
+    left: 3.75rem;
+
+    display: flex;
+
+    text-align: left;
+    word-wrap: break-word;
+
+    align-items: center;
+    justify-content: center
+}
+
+    .about img
+{
+    width: 200px;
+    height: 200px;
+
+    margin: 2rem;
+
+    border-radius: 50%;
+    background: no-repeat center;
+
+    object-fit: cover
+}
+
+	.me-info
+{
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-variant: small-caps;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 0;
+    padding: 0;
+
+    word-wrap: break-word;
+
+    color: #272727;
+
+    justify-content: center
+}
+
+	.title
+{
+	font-size : 3rem;
+	line-height : 1
+}
+
+	.about-me
+{
+	font-size : 1.125rem;
+	line-height : 1.5;
+
+	margin-left : 5px
+}
+
+	.social
+{
+    margin-top: 30px;
+    margin-left: 10px
+}
+
+    svg.copyright-icon
+{
+    display: inline-block;
+
+    width: 1.125rem;
+    height: 1.125rem;
+
+    margin-right: 10px;
+
+    transition: all .5s ease;
+
+    stroke: currentColor;
+    stroke-width: 0;
+    fill: #272727;
+    stroke: #272727
+}
+
+	svg.copyright-icon:hover
+{
+    width: 1.25rem;
+    height: 1.25rem;
+
+    fill: #02c6ba;
+    stroke: #02c6ba
+}
+
+	.copyright
+{
+	font-size : .875rem;
+	line-height : 30px;
+
+	margin-left : 10px;
+
+	color : rgba(0, 0, 0, .7)
+}
+
+	.copyright a
+{
+    font-size: .875rem;
+
+    text-decoration: none;
+
+    color: #272727
+}
+
+    .copyright a:hover,
+    .copyright a:focus
+{
+    padding: 6px 12px;
+
+    cursor: pointer;
+    transition: all .3s ease 0s;
+
+    color: #fff;
+    border: none;
+    border-radius: 45px;
+    outline: none;
+
+    background: #02c6ba;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, .1)
+}
+
+/* 	side  */
+
+    .sidebar
+{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 34%;
+    height: auto;
+    max-height: 100%;
+
+    background: #fff;
+
+    align-items: stretch
+}
+
+	.txt-label
+{
+    font: 1.4rem 'Josefin Sans';
+    font-weight: 300;
+    font-variant: small-caps;
+    line-height: 60px;
+
+    display: flex;
+    overflow: hidden;
+
+    height: 60px;
+    min-height: 60px;
+    padding: 0 40px;
+
+    text-overflow: ellipsis;
+
+    background: #f4f5f3;
+
+    order: 2
+}
+
+	.txt-card
+{
+	display : flex;
+
+    max-height: 50%;
+
+	flex-grow : 1;
+	order : 1
+}
+
+	.txt-card div	
+{
+	margin : auto;
+	padding : 40px
+}	
+
+	.txt-card p
+{
+	font-size : 1.125rem;		
+	font-weight : 300;
+
+  	overflow : hidden;
+  	text-overflow : ellipsis;
+
+	color : #272727
+}
+
+	.txt-card a
+{
+	font-size : 1.125rem;
+	font-weight : 400;
+
+	text-decoration : none;
+
+	color : #272727
+}
+
+	.txt-card a:hover,
+	.txt-card a:focus
+{
+	margin : 0 4px;
+	padding : 2px 4px 4px 6px;
+
+	cursor : pointer;
+	transition : all .3s;
+	transform : scale(.1, 1);
+
+	color : #272727;
+	border : none;
+	border-radius : 4px;
+	outline : none;
+	background : #fff
+}
+
+	.shot
+{
+	display : flex;
+
+	width : auto;
+    min-height: 20%;
+	max-height : 280px;  
+
+	order : 3
+}
+
+	.shot img
+{  
+    width : 100%;
+    height : auto;
+  
+ 	object-fit: cover
+}
+
+/*  audio   */
+
+    .player
+{
+    display: flex;
+
+    min-height: 20%;
+    max-height: 160px;
+
+    padding: 2rem 3rem;
+
+    background: #c7cbb6;
+
+    align-items: center;
+    justify-content: space-around;
+    order: 4
+}
+
+    .audio-icon
+{
+    display : flex;
+    align-items : center
+}
+
+    svg.audio
+{
+    display : flex;
+
+    width : 3.75rem;
+    height : 3.75rem;   
+    
+    align-items : center;
+    stroke : currentColor;
+    stroke-width : 0;
+
+    transition : .3s;
+    cursor : pointer;
+    transition : all .5s ease;
+
+    fill : #f4f5f3;
+    stroke : #f4f5f3
+}
+
+    svg.audio:hover
+{
+    width: 4rem;
+    height: 4rem;
+
+    fill: #e6ecec;
+    stroke: #e6ecec
+}
+
+    svg.hide-play {display: none }
+
+    .audio-info
+{
+    display : flex;
+    flex-direction : column;
+
+    width : 60%;
+    color :  #fff;
+
+    align-items : stretch
+}
+
+    .audio-info p
+{
+    font-variant : small-caps;
+
+    margin : 0;
+    padding : 0;
+
+    text-align : right;
+    letter-spacing : .07rem;
+}
+
+ .track { font: 1.5rem 'Josefin Sans' } 
+ .track-data { font-size: .875rem }
+
+/* 	device	*/
+
+	@media (max-width: 1024px)
+
+{
+    html {  font-size: calc(14px + .390625vw) }
+
+	.home-template { display: block }
+
+  	.content
+{
+	display : flex;
+	flex-direction : column;
+
+	border-right : none;
+
+	width : 100%;
+	max-height : 660px;
+
+	justify-content : center;
+	order : 1
+}
+
+  	.about
+{
+	bottom : 30px;
+	left : 0;
+
+	display : flex;
+	flex-direction : column;
+
+	width : 100%;
+	height : 100%;
+
+	margin : auto;
+
+	justify-content : center
+}
+
+    .about img { opacity: .85 }
+
+	.me-info
+{
+	display : flex;
+	flex-direction : column;
+
+	text-align : center;
+
+	justify-content : center
+}
+
+	.title { font-size: 2.5rem } 
+    .about-me { font-size: 1.25rem }
+
+	.sidebar
+{
+	display : flex;
+	flex-direction : column;
+
+	width : 100%;
+	max-height : none;
+
+	justify-content : center;
+	order : 2
+}
+
+	.player { padding: 2rem }
+    
+}
+
+/* 	loader	*/
+
+.loader
+{
+    display : flex;    
+    align-items : center;
+    justify-content : center;
+
+    position : absolute;
+    z-index : 9999;
+    top : 0;
+    right : 0;
+    bottom : 0;
+    left : 0;
+
+    margin : auto;
+
+    background: rgba(209, 204, 192, .9)
+}
+
+.scanner 
+{
+    font-size: 1.4rem;
+
+    position: relative;
+
+    overflow: hidden;
+
+    color: #84817a
+}
+
+.scanner::before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 0;
+    height: 100%;
+
+    content: 'Loading...';
+    animation: load 2s linear infinite;
+
+    color: white;
+    border-right: 4px solid #f1f2f6
+}
+
+ @keyframes load {0%, 10%, 100% {width: 0; } 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {border-right-color: transparent; } 11%, 21%, 31%, 41%, 51%, 61%, 71%, 81%, 91% {border-right-color: white; } 60%, 80% {width: 100%; } }
