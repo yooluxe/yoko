@@ -1,4 +1,4 @@
 
-<img src="preview/yoko.jpg" width="830">
+<img src="preview/pic.jpg>
 
 ## [Yoko`s](https://www.yokko.one/) portfolio website. ##
