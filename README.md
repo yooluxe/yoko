@@ -1,4 +1,4 @@
 
-<img src="preview/git.jpg">
+<img src="preview/pic.jpg">
 
 ## [Yoko`s](https://www.yokko.one/) portfolio website. ##
